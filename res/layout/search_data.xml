@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:layout_width="match_parent"
+  	android:layout_height="match_parent"
+    android:orientation="vertical" 
+  	android:background="@drawable/bg_main"
+	android:padding="10dp" >
+
+  <TextView
+    android:id="@+id/tap_text"
+    android:text="APLIKASI KAMUS TEKNOLOGI"
+    android:textSize="22sp"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:textColor="#fff"
+    android:textStyle="bold"
+    android:layout_height="wrap_content"/>
+  
+  <TextView 
+	android:layout_height="wrap_content"
+    android:textSize="13sp"
+    android:gravity="center"
+    android:textColor="#fff"
+    android:text="Kamus Praktis Untuk Mengenal Istilah Teknologi Terbaru"
+    android:layout_marginBottom="30dp"
+	android:layout_width="fill_parent"/>
+  
+  <TextView 
+	android:layout_height="wrap_content"
+    android:textSize="18sp"
+    android:textColor="#000"
+    android:textStyle="bold"
+    android:gravity="center_horizontal"
+	android:layout_width="fill_parent"/>
+ 
+ <TableLayout
+    android:id="@+id/tableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:shrinkColumns="*"
+    android:gravity="top"
+    android:stretchColumns="*">
+    
+   <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+            
+		<EditText android:text=""
+	    	android:layout_height="wrap_content"
+	    	android:id="@+id/cari_data"
+        	android:textSize="16sp"
+            android:layout_span="8"
+        	android:hint="Cari data"
+			android:layout_width="fill_parent" >
+		</EditText>
+		
+		<Button
+        	android:id="@+id/btn_cari_data_browse"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textSize="11sp"
+            android:layout_span="2"
+        	android:text="CARI" 
+        />
+        
+  	</TableRow>
+</TableLayout> 
+  
+<ListView 
+    android:id="@android:id/list" 
+    android:layout_width="fill_parent"
+    android:layout_height="350dp" />
+
+<LinearLayout
+  	android:layout_width="match_parent"
+  	android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"  >
+
+<TextView 
+	android:layout_height="wrap_content"
+    android:textSize="12sp"
+    android:gravity="center_horizontal"
+    android:textColor="#fff"
+    android:layout_marginBottom="10dp"
+    android:textStyle="bold"
+    android:text="Aplikasi Kamus Teknologi - 2013 \n Desain dan Program oleh Mahasiswa Teknik Informatika 2013"
+	android:layout_width="fill_parent"/>
+	
+</LinearLayout>
+
+</LinearLayout>

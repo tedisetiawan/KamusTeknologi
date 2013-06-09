@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:layout_width="match_parent"
+  	android:layout_height="match_parent"
+    android:orientation="vertical" 
+  	android:background="@drawable/bg_main"
+	android:padding="10dp" >
+
+  <TextView
+    android:id="@+id/tap_text"
+    android:text="APLIKASI KAMUS TEKNOLOGI"
+    android:textSize="22sp"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:textColor="#fff"
+    android:textStyle="bold"
+    android:layout_height="wrap_content"/>
+  
+  <TextView 
+	android:layout_height="wrap_content"
+    android:textSize="13sp"
+    android:gravity="center"
+    android:textColor="#fff"
+    android:text="Kamus Praktis Untuk Mengenal Istilah Teknologi Terbaru"
+    android:layout_marginBottom="30dp"
+	android:layout_width="fill_parent"/>
+  
+  <TextView 
+	android:layout_height="wrap_content"
+    android:textSize="18sp"
+    android:textColor="#000"
+    android:textStyle="bold"
+    android:gravity="center_horizontal"
+	android:layout_width="fill_parent"/>
+  
+  	<ScrollView
+    	android:layout_width="fill_parent"
+    	android:layout_height="400dp">
+	<LinearLayout
+	android:layout_height="wrap_content" android:layout_width="fill_parent"
+	android:orientation="vertical" >
+  
+ 	<TextView android:text= "Nama/Judul : "
+    	android:textColor="#333"
+	    android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+		android:layout_width="fill_parent" >
+	</TextView>
+	
+    <EditText android:text= ""
+	    android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:id="@+id/ed_nama"
+		android:layout_width="fill_parent" >
+	</EditText>
+  
+ 	<TextView android:text= "Keterangan : "
+    	android:textColor="#333"
+	    android:layout_height="wrap_content"
+        android:textSize="16sp"
+		android:layout_width="fill_parent" >
+	</TextView>
+	
+    <EditText android:text= ""
+	    android:layout_height="250px"
+        android:textSize="14sp"
+    	android:gravity="top"
+        android:id="@+id/ed_keterangan"
+		android:layout_width="fill_parent" >
+	</EditText>
+	
+ 	<Button 
+		android:id="@+id/btn_choose"
+		android:text="Choose Image" 		 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"/>
+		
+	<ImageView 
+		android:id="@+id/iv_pic"
+		android:layout_width="wrap_content"
+		android:layout_height="120dp"		
+		android:layout_marginTop="10dp"/>
+	
+    <EditText android:text= ""
+	    android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:id="@+id/ed_gambar"
+		android:layout_width="fill_parent" >
+	</EditText>
+    
+    <Button
+        android:id="@+id/btn_simpan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+    	android:orientation="horizontal" 
+        android:text="Simpan Data" />  
+    
+</LinearLayout>
+</ScrollView>
+
+
+<LinearLayout
+  	android:layout_width="match_parent"
+  	android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"  >
+
+<TextView 
+	android:layout_height="wrap_content"
+    android:textSize="12sp"
+    android:gravity="center_horizontal"
+    android:textColor="#fff"
+    android:layout_marginBottom="10dp"
+    android:textStyle="bold"
+    android:text="Aplikasi Kamus Teknologi - 2013 \n Desain dan Program oleh Mahasiswa Teknik Informatika 2013"
+	android:layout_width="fill_parent"/>
+	
+</LinearLayout>
+
+</LinearLayout>

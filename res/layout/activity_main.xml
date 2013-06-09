@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:layout_width="match_parent"
+  	android:layout_height="match_parent"
+    android:orientation="vertical" 
+  	android:background="@drawable/bg_main"
+	android:padding="10dp" >
+
+  <TextView
+    android:id="@+id/tap_text"
+    android:text="APLIKASI KAMUS TEKNOLOGI"
+    android:textSize="22sp"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:textColor="#fff"
+    android:textStyle="bold"
+    android:layout_height="wrap_content"/>
+  
+  <TextView 
+	android:layout_height="wrap_content"
+    android:textSize="13sp"
+    android:gravity="center"
+    android:textColor="#fff"
+    android:text="Kamus Praktis Untuk Mengenal Istilah Teknologi Terbaru"
+    android:layout_marginBottom="30dp"
+	android:layout_width="fill_parent"/>
+  
+  <TextView 
+	android:layout_height="wrap_content"
+    android:textSize="18sp"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="30dp"
+    android:textColor="#000"
+    android:textStyle="bold"
+    android:gravity="center_horizontal"
+    android:text="Selamat Datang di \n APLIKASI KAMUS TEKNOLOGI"
+	android:layout_width="fill_parent"/>
+  
+  
+<TableLayout
+    android:id="@+id/tableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:shrinkColumns="*"
+    android:gravity="top"
+    android:stretchColumns="*">
+    
+   <TableRow
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent">
+        <Button
+        	android:id="@+id/btn_browse_data"
+        	style="@style/DashboardButton"
+        	android:drawableTop="@drawable/database"
+    		android:layout_span="3"
+    		android:textColor="#000"
+        	android:text="Browse Data Teknologi" />
+        <Button
+        	android:id="@+id/btn_cari_data"
+        	style="@style/DashboardButton"
+    		android:layout_span="3"
+    		android:textColor="#000"
+        	android:drawableTop="@drawable/tambah"
+        	android:text="Pencarian Data" />
+    </TableRow>
+   <TableRow
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent">
+        <Button
+        	android:id="@+id/btn_login"
+        	style="@style/DashboardButton"
+    		android:layout_span="3"
+    		android:textColor="#000"
+        	android:drawableTop="@drawable/login"
+        	android:text="Log In Admin" />
+        <Button
+        	android:id="@+id/btn_about"
+        	style="@style/DashboardButton"
+    		android:layout_span="3"
+    		android:textColor="#000"
+        	android:drawableTop="@drawable/about"
+        	android:text="Tentang Penulis" />
+    </TableRow>
+   <TableRow
+        android:layout_height="wrap_content"
+    	android:layout_marginTop="20dp"
+        android:id="@+id/tableRow2"
+ 		android:layout_margin="10dp"
+        android:layout_width="match_parent">
+	
+	<CheckBox
+		android:id="@+id/cb_facebook"
+    	android:layout_span="6"
+		android:text="  Facebook (Not connected) "
+		android:textSize="14sp"
+		android:textStyle="bold"
+		android:textColor="#000"
+		android:clickable="true"
+		android:focusable="true" 
+		android:button="@drawable/btn_check_facebook"/>
+	
+    </TableRow>
+</TableLayout>
+
+<LinearLayout
+  	android:layout_width="match_parent"
+  	android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"  >
+
+<TextView 
+	android:layout_height="wrap_content"
+    android:textSize="12sp"
+    android:gravity="center_horizontal"
+    android:textColor="#fff"
+    android:layout_marginBottom="10dp"
+    android:textStyle="bold"
+    android:text="Aplikasi Kamus Teknologi - 2013 \n Desain dan Program oleh Mahasiswa Teknik Informatika 2013"
+	android:layout_width="fill_parent"/>
+	
+</LinearLayout>
+
+</LinearLayout>
