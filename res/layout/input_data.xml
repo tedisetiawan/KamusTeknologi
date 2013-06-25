@@ -69,13 +69,24 @@
         android:id="@+id/ed_keterangan"
 		android:layout_width="fill_parent" >
 	</EditText>
+ 
+ 	<LinearLayout android:id="@+id/LinearLayout02" android:layout_height="wrap_content" android:layout_width="match_parent">
 	
  	<Button 
 		android:id="@+id/btn_choose"
 		android:text="Choose Image" 		 
-		android:layout_width="wrap_content" 
+		android:layout_width="0dp" 
 		android:layout_height="wrap_content"
-		android:layout_marginTop="10dp"/>
+		 android:layout_weight="1"
+    	android:orientation="horizontal" />
+ 	<Button
+        android:id="@+id/btn_simpan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+         android:layout_weight="1"
+    	android:orientation="horizontal" 
+        android:text="Simpan Data" /> 
+    </LinearLayout>
 		
 	<ImageView 
 		android:id="@+id/iv_pic"
@@ -89,14 +100,6 @@
         android:id="@+id/ed_gambar"
 		android:layout_width="fill_parent" >
 	</EditText>
-    
-    <Button
-        android:id="@+id/btn_simpan"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-    	android:orientation="horizontal" 
-        android:text="Simpan Data" />  
     
 </LinearLayout>
 </ScrollView>

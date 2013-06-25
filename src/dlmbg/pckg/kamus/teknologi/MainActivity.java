@@ -78,6 +78,14 @@ public class MainActivity extends Activity {
  				StartAbout();
  			}
  		});
+        
+ 		Button tmb_tambah = (Button) findViewById(R.id.btn_tambah);
+ 		tmb_tambah.setOnClickListener(new View.OnClickListener() {
+ 			@Override
+ 			public void onClick(View view) {
+ 				StartTambah();
+ 			}
+ 		});
  		
 
         
@@ -94,7 +102,7 @@ public class MainActivity extends Activity {
 			String name = SessionStore.getName(this);
 			name		= (name.equals("")) ? "Unknown" : name;
 			
-			mFacebookBtn.setText("  Facebook (" + name + ")");
+			mFacebookBtn.setText("FB (" + name + ")");
 			mFacebookBtn.setTextColor(Color.BLACK);
 		}
         
@@ -269,6 +277,21 @@ public class MainActivity extends Activity {
     	{
     		session.logoutUser();
     		finish();
+    	}
+    	else
+    	{
+    		Intent intent = new Intent(this, Admin.class);
+    		startActivity(intent);
+    		finish();
+    	}
+	}
+    
+    public void StartTambah() {
+    	if(session.isLoggedIn() == true)
+    	{
+    		Intent intent = new Intent(this, TambahData.class);
+    		intent.putExtra("data_kamus", "");
+    		startActivity(intent);
     	}
     	else
     	{

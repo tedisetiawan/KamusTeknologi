@@ -14,7 +14,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class SqliteManager {
 	public static final int VERSI_DATABASE= 1;
-	public static final String NAMA_DATABASE = "DBaseKamusTeknologi";
+	public static final String NAMA_DATABASE = "DBaseKamus";
 	public static final int POSISI_ID = 0;
 
 	public static final String[] FIELD_TABEL_KAMUS ={"_id","nama","keterangan","gambar"};
